@@ -3,9 +3,8 @@
     <%= link_to "Members Only", login_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <%# if logged_in? %>
-        <% if false %>
-          <%#= link_to "Log out", logout_path, method: :delete %>
+        <% if logged_in? %>
+          <li><%= link_to "Log out", logout_path, method: :delete %></li>
         <% else %>
           <li><%= link_to "Log in", login_path %></li>
         <% end %>
