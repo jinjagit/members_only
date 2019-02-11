@@ -12,10 +12,18 @@
 
       <%= f.label :remember_me, class: "checkbox inline" do %>
         <%= f.check_box :remember_me %>
-        <span>Remember me on this computer</span>
+        <span>Remember me</span>
       <% end %>
 
       <%= f.submit "Log in", class: "btn btn-primary" %>
     <% end %>
+  </div>
+</div>
+
+<div id="icon_div">
+  <div style="width:50px;margin:auto" title="view code on GitHub">
+    <a href="https://github.com/jinjagit/members_only">
+    <%= image_tag("github_mask.png", :alt => "GitHub icon", id: "github_icon") %>
+    </a>
   </div>
 </div>

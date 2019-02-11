@@ -131,3 +131,21 @@ input {
   background-color: #00d100 !important;
   border-color: #008700;
 }
+
+/* misc */
+
+#icon_div {
+  vertical-align: middle;
+  text-align:center;
+}
+
+#github_icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 75px;
+  background-color: #333;
+}
+
+#github_icon:hover {
+  background-color: #666;
+}
