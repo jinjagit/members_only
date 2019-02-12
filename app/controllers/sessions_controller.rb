@@ -17,7 +17,6 @@ class SessionsController < ApplicationController
 
   def destroy
     log_out if logged_in?
-    #redirect_to root_url
     redirect_back(fallback_location: root_path)
   end
 end
