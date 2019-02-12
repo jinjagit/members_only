@@ -1,0 +1,17 @@
+<span class="heading">Create New Post</span><br>
+
+<ul>
+  <% @post.errors.full_messages.each do |message| %>
+    <li class="new_post_error"><%= message %></li>
+  <% end %>
+</ul>
+
+<%= form_for(@post) do |f| %>
+  <%= f.label :title, 'title:' %>
+  <%= f.text_field :title, class: 'form-control' %>
+  <%= f.label :body, 'body text:' %>
+  <%= f.text_area :body, size: "25x15", class: 'form-control' %>
+  <%= f.submit "Submit", class: "btn btn-primary" %>
+<% end %>
+
+<%= render 'layouts/github' %>

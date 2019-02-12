@@ -4,7 +4,7 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
-$gray-medium: #ccc;
+$gray-medium: #aaa;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -79,6 +79,14 @@ p {
   }
 }
 
+#header_link {
+  color: #ccc;
+}
+
+#header_link:hover {
+  color: white;
+}
+
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -130,6 +138,66 @@ input {
 .btn-primary:hover {
   background-color: #00d100 !important;
   border-color: #008700;
+}
+
+/* posts */
+
+.posts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #333;
+  }
+  .title {
+    display: inline-block;
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    color: #333 !important;
+    font-weight: bold;
+    margin-top: 1em;
+    padding-top: 0;
+  }
+  .author {
+    margin-top: 0.2em;
+    display: inline-block;
+    .red{
+      display: inline-block;
+      color: red;
+    }
+  }
+  .body {
+    display: block;
+    margin-left: 60px;
+    margin-top: 0.5em;
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+/* headings */
+
+.heading {
+  display: block;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* new post errors */
+
+.new_post_error {
+  color: red;
 }
 
 /* misc */
