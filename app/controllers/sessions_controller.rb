@@ -8,8 +8,7 @@ class SessionsController < ApplicationController
     if @user && @user.authenticate(params[:session][:password])
       log_in @user
       params[:session][:remember_me] == '1' ? remember(@user) : forget(@user)
-      redirect_back(fallback_location: root_path)
-      # redirect_to posts (not implemented yet)
+      redirect_to posts_url
     else
       flash.now[:danger] = 'Invalid email/password combination'
       render 'new'
