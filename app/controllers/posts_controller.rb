@@ -10,6 +10,7 @@ class PostsController < ApplicationController
   end
 
   def create
+    post_params
     @post = Post.new(user_id: session[:user_id], title: params[:post][:title],
                      body: params[:post][:body])
     if @post.save
@@ -24,6 +25,10 @@ class PostsController < ApplicationController
   end
 
   private
+
+    def post_params
+      params.require(:post).permit(:title, :body)
+    end
 
     # Before filters
 

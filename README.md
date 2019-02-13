@@ -4,13 +4,13 @@ Simon Tharby's solution to [Project 2: Members Only!](https://www.theodinproject
 
 [View in browser](https://safe-falls-96496.herokuapp.com) Please allow 20 seconds for free server to spin up.
 
-Note: To log in (on Heroku app), use;
-email: 'foo@bar.com'
-password: 'foobar'
+Note: To log in (to [Heroku app](https://safe-falls-96496.herokuapp.com)), use;
+  * email: 'foo@bar.com'
+  * password: 'foobar'
 
 ## Assignment instructions:
 
-"In this project, you’ll be building an exclusive clubhouse where your members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it." ... + [more explicit guidance](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication?ref=lnav).
+"In this project, you’ll be building an exclusive clubhouse where your members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it." ... + [further explicit guidance](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication?ref=lnav).
 
 In summary, the exercise requires the construction of a login page, an index of user posts where only logged-in users can see the name of the post authors, and the respective routes, models and controllers these require (including session cookies to 'remember' a logged-in user). The key concepts are the use of a secure password digest method, a browser cookie 'remember user login' method (with secure remember token digest), and limiting access to certain functions (esp: viewing post author names) to signed-in users only.
 
@@ -32,11 +32,11 @@ Home page = Posts index (with author names hidden to non-logged-in-user):
 
 ![index_loggedout.png](app/assets/images/index_loggedout.png)
 
-Home page = Posts index (with author names shown to logged-in-user):
+Posts index (with author names shown to logged-in-user):
 
 ![index_loggedin.png](app/assets/images/index_loggedin.png)
 
-Login page, showing form submission errors:
+Log in page, showing form submission errors:
 
 ![login_error.png](app/assets/images/login_error.png)
 
@@ -44,13 +44,13 @@ New post form, showing form submission errors:
 
 ![newpost_error.png](app/assets/images/newpost_error.png)
 
-Login page, showing error after redirect, triggered by attempted navigation to 'posts/new' by non-logged-in-user:
+Log in page, showing error after redirect, triggered by attempted navigation to 'posts/new' by non-logged-in-user:
 
 ![new_loggedout.png](app/assets/images/new_loggedout.png)
 
 ## Things I didn't know / immediately remember, but worked out:
 
-Although including bootstrap and related CSS improves styling, to get the text input fields and login buton to scale nicely to the page, etc. required inserting (and editing):
+Although including bootstrap and related CSS improves styling, to get the text input fields and log in button to scale nicely to the page, etc. required inserting (and editing):
 
 app/views/layouts/\_rails_default.html.erb
 app/views/layouts/\_shim.html.erb
