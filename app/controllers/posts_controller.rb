@@ -10,9 +10,8 @@ class PostsController < ApplicationController
   end
 
   def create
-    post_params
-    @post = Post.new(user_id: session[:user_id], title: params[:post][:title],
-                     body: params[:post][:body])
+    @post = Post.new(user_id: session[:user_id], title: post_params[:title],
+                     body: post_params[:body])
     if @post.save
       redirect_to posts_path
     else
