@@ -5,7 +5,7 @@ Simon Tharby's solution to [Project 2: Members Only!](https://www.theodinproject
 [View in browser](https://safe-falls-96496.herokuapp.com) Please allow 20 seconds for free server to spin up.
 
 Note: To log in (to [Heroku app](https://safe-falls-96496.herokuapp.com)), use;
-  * email: 'foo@bar.com'
+  * email: 'foo\@bar\.com'
   * password: 'foobar'
 
 ## Assignment instructions:
