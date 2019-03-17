@@ -4,7 +4,7 @@ Simon Tharby's solution to [Project 2: Members Only!](https://www.theodinproject
 
 [View in browser](https://members-only.simontharby.com/)
 
-Note: To log in (to [Heroku app](https://safe-falls-96496.herokuapp.com)), use;
+Note: To log in to the live app, use;
   * email: ```foo@bar.com```
   * password: ```foobar```
 
