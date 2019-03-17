@@ -2,7 +2,7 @@
 
 Simon Tharby's solution to [Project 2: Members Only!](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication?ref=lnav), Authentication section, Ruby on Rails unit, Odin Project.
 
-[View in browser](https://safe-falls-96496.herokuapp.com) Please allow 20 seconds for free server to spin up.
+[View in browser](https://members-only.simontharby.com/)
 
 Note: To log in (to [Heroku app](https://safe-falls-96496.herokuapp.com)), use;
   * email: ```foo@bar.com```
