@@ -2,7 +2,7 @@
 
 Simon Tharby's solution to [Project 2: Members Only!](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication?ref=lnav), Authentication section, Ruby on Rails unit, Odin Project.
 
-[View in browser](https://members-only-simontharby.herokuapp.com/)
+[View in browser](https://members-only-simontharby.herokuapp.com/) \*The server for this app may need to initialize and this may take up to 30 seconds.
 
 Note: To log in to the live app, use;
   * email: ```foo@bar.com```
